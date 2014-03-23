@@ -2,7 +2,9 @@ meteor-emitter
 ==============
 
 A server and client event package. 
-
+On the server it will use node's events and on the client it will use jQuery. 
+Whats nice about this package is it uses the same API for both server and client. 
+This lets you write events that are not specific to the environment.
 
 ## New emitter
 Create a new emitter with an optional name.
@@ -41,3 +43,8 @@ emitter.on('sleep', function (isSleeping) {
   }
 });
 ```
+
+## TODO
+
+* TESTS!
+* More functions? Make an issue or pull request as needed.
