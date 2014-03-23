@@ -34,7 +34,7 @@ Its important to note that you should not need reference the event directly.
 
 ## Listening to events
 
-If you want to listen to the event in the above example you would use the `call` function.
+If you want to listen to the event in the above example you would use the `on` function.
 
 ```js
 emitter.on('sleep', function (isSleeping) {
