@@ -36,8 +36,8 @@ Its important to note that you should not need to reference the event directly.
 If you want to listen to the event in the above example you would use the `on` function.
 
 ```js
-emitter.on('sleep', function (isSleeping) {
-  if (isSleeping) {
+emitter.on('sleep', function (state) {
+  if (state.userIsSleeping) {
     //do something useful
   }
 });
