@@ -26,11 +26,10 @@ The emitter handle will manage your namespacing for you.
 
 var emitter = Emitter('Emitter');
 emitter.emit('sleep', {userIsSleeping: true});
-
 ```
 
 In this example the event name will be `Emitter_sleep`. 
-Its important to note that you should not need reference the event directly.
+Its important to note that you should not need to reference the event directly.
 
 ## Listening to events
 
