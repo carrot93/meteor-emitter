@@ -3,7 +3,7 @@
   "description": "A server and client event package.",
   "homepage": "https://github.com/Meteor-Reaction/meteor-emitter",
   "author": "Sivli Kestanous",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "git": "https://github.com/Meteor-Reaction/meteor-emitter.git",
   "packages": {}
 }
