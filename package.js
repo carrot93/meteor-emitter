@@ -3,14 +3,20 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-	api.use(['underscore','coffeescript', 'jquery'])
+	api.use(['jquery'])
 
-  api.add_files([
-    'emitter.coffee'
-    ], ['client', 'server']);
+  api.add_files('emitter.client.js', 'client');
 
-  Npm.depends({
-    'event-emitter': '0.2.2'
-  })
-  api.export('Emitter')
+  api.add_files('emitter.server.js', 'server');
+
+  api.export('EventEmitter')
+});
+
+
+Package.on_test(function (api) {
+  api.use(['emitter']);
+  api.use('test-helpers', ['server', 'client']);
+  api.use('tinytest');
+
+  api.add_files('emitter.tests.js');
 });
