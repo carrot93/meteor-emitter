@@ -1,6 +1,9 @@
 EventEmitter
 ============
 
+[@raix](https://github.com/raix) seems to be working on [his version](https://github.com/raix/Meteor-EventEmitter) so I guess I will depreacated this in favor of his. For those using this, I have never had an issue with this package so there is no demand to switch. But if you adding this package for the first time you will likely want raix's package.
+
+
 A server and client event package. 
 On the server it will use node's events and on the client it will use jQuery. 
 Whats nice about this package is it uses the same API for both server and client. 
